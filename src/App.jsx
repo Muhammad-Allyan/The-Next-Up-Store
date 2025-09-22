@@ -50,7 +50,6 @@ function App() {
   };
 
   return (
-    <ThemeProvider>
     <div>
       <ThemeToggle/>
           {!state?.isLoggedIn ? (
@@ -66,7 +65,6 @@ function App() {
             </>
           )}
     </div>
-    </ThemeProvider>
   );
 }
 

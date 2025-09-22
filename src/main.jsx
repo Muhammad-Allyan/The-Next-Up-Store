@@ -12,6 +12,7 @@ import Login from "./components/login.jsx";
 import { ThemeProvider } from "./ThemeContext.jsx";
 
 createRoot(document.getElementById("root")).render(
+  <ThemeProvider>
     <BrowserRouter>
       {/* <Login/> */}
       <Routes>
@@ -23,4 +24,5 @@ createRoot(document.getElementById("root")).render(
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
+  </ThemeProvider>
 );

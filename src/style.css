@@ -142,13 +142,10 @@ width: 50%;
 /* Login Styling */
 .login-container {
   max-width: 400px;
-  margin: 100px auto;
+  margin: auto;
   padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
   text-align: center;
-  background-color: #f9f9f9;
-}
+  }
 
 .login-container input {
   width: 90%;
