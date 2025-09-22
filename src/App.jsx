@@ -7,6 +7,7 @@ import SingleProduct from './components/SingleProduct';
 import './style.css';
 import './App.css';
 import { NavLink, Link, useNavigate, useParams, useLocation } from "react-router";
+import { ThemeProvider } from './ThemeContext';
 
 function App() { console.log("App");
     const [selectedProduct, setSelectedProduct] = useState(null);
@@ -42,6 +43,7 @@ function App() { console.log("App");
 
     return (
         <div>
+            <ThemeProvider>
             {!state?.isLoggedIn ? (
                 <Login />
             ) : (
@@ -54,6 +56,7 @@ function App() { console.log("App");
                     />
                 </>
             )}
+            </ThemeProvider>
         </div>
     );
 

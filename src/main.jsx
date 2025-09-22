@@ -16,9 +16,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Login/> */}
     
     <Routes>
-      <ThemeProvider>
       <Route path="/" element={<App />} />
-      </ThemeProvider>
       <Route path="/counter" element={<Counter />} />
       <Route path="/todo" element={<Todo />} />
       <Route path="/products" element={<ProductList />} />
