@@ -49,9 +49,9 @@ function App() {
   };
 
   return (
+    <ThemeProvider>
     <div>
-      <ThemeToggle>
-        <ThemeProvider>
+      <ThemeToggle/>
           {!state?.isLoggedIn ? (
             <Login />
           ) : (
@@ -64,22 +64,9 @@ function App() {
               />
             </>
           )}
-        </ThemeProvider>
-      </ThemeToggle>
     </div>
+    </ThemeProvider>
   );
-
-  // return (
-  //     <div>
-  //             <>
-  //                 <ProductList
-  //                     onProductClick={handleProductClick}
-  //                     onAddToCart={handleAddToCart}
-  //                 />
-  //             </>
-
-  //     </div>
-  // );
 }
 
 export default App;
