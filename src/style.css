@@ -1,0 +1,164 @@
+
+h5 {
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 0px 0px 30px;
+
+}
+
+#category-sidebar {
+    min-width: 20%;
+    margin: 8px 0px 8px 10px;
+    border: 3px solid rgba(113, 113, 113, 0);
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+
+h4 {
+    font-size: 1.5em;
+    padding: 20px 0px 0px 0px;
+    margin: 0px;
+    color: #2b408f;
+}
+
+#category-sidebar,
+ul,
+li {
+    padding: 0px 0px 8px 0px;
+    list-style-type: none;
+    color: #213547;
+}
+
+#product-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+#flex_cont{
+    display: flex;
+}
+.card{
+    max-width: 40%;
+}
+#card_cont{
+   width: 50%;
+}
+#loading {
+    font-size: 36px;
+    display: flex;
+    position: absolute;
+    margin: auto;
+    padding: auto;
+    top: 0%;
+    bottom: 0%;
+    justify-content: center;
+    background-color: rgba(230, 233, 237, 1.5);
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+#single_image{
+width: 50%;
+}
+
+
+/* HEADER STYLES */
+.navbar {
+    max-width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar .btn-outline-primary {
+  position: relative;
+  font-weight: 500;
+}
+
+.navbar .badge {
+  font-size: 0.8rem;
+  position: absolute;
+  top: -4px;
+  right: -25px;
+  background-color: #dc3545; /* Bootstrap red */
+  color: white;
+  border-radius: 50%;
+  padding: 0.3em 0.5em;
+}
+
+/* Check Out Now  */
+.check_out{
+    margin: 0px 0px 0px 40px;
+    font-weight: 500;
+}
+
+/* Category Styling */
+#category-list li {
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #333;
+  font-weight: 500;
+}
+
+#category-list li:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+#category-list li.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+/* Login Styling */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
