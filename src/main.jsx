@@ -18,12 +18,12 @@ createRoot(document.getElementById('root')).render(
     <Routes>
       <ThemeProvider>
       <Route path="/" element={<App />} />
+      </ThemeProvider>
       <Route path="/counter" element={<Counter />} />
       <Route path="/todo" element={<Todo />} />
       <Route path="/products" element={<ProductList />} />
       <Route path="/products/:id" element={<SingleProduct />} />
       <Route path="/checkout" element={<Checkout />} />
-      </ThemeProvider>
     </Routes>
   </BrowserRouter>
 )
