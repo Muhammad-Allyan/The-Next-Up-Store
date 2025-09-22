@@ -9,7 +9,7 @@ import SingleProduct from './components/SingleProduct.jsx'
 import Checkout from './components/Checkout.jsx'
 import MainHeader from './components/MainHeader.jsx'
 import Login from './components/login.jsx'
-import { ThemeProvider } from '../ThemeContext.js'
+import { ThemeProvider } from './ThemeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
