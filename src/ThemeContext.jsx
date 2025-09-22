@@ -1,15 +1,14 @@
 import React, { createContext, useEffect, useState } from "react";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
-  // Detect system dark mode
+  // Force light mode if system is dark
   useEffect(() => {
     const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setTheme(darkMode ? "dark" : "light");
+    setTheme(darkMode ? "light" : "light"); // always start light
   }, []);
 
   const toggleTheme = () => {
@@ -18,7 +17,7 @@ export const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className={theme}>{children}</div>
+      <div data-theme={theme}>{children}</div>
     </ThemeContext.Provider>
   );
 };
