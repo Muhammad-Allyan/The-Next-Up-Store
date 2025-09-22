@@ -4,6 +4,7 @@ import Login from "./components/login";
 import MainHeader from "./components/MainHeader";
 import ProductList from "./components/ProductList";
 import SingleProduct from "./components/SingleProduct";
+import "./index.css";
 import "./style.css";
 import "./App.css";
 import {
